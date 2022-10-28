@@ -6,21 +6,33 @@ const SectionHeader = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  
+  h2{
+    margin-right: auto;
+  }
+  a{
+    margin-left: auto;
+  }
 `;
 
-const Slider = styled.div`
+const Articles = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
 
+const Section = styled.div`
+    width: 85vw;
+  margin: auto;
+`;
+
 function ItemSection() {
     return (
-        <div>
+        <Section>
             <SectionHeader>
                 <h2>섹션제목</h2>
                 <a>아이템더보기</a>
             </SectionHeader>
-            <Slider>
+            <Articles>
                 <Item/>
                 <Item/>
                 <Item/>
@@ -29,8 +41,8 @@ function ItemSection() {
                 <Item/>
                 <Item/>
                 <Item/>
-            </Slider>
-        </div>
+            </Articles>
+        </Section>
     )
 }
 
